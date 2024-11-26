@@ -1,9 +1,10 @@
 ```java
 class NumArray {
     
-    private final int[] prefix = new int[nums.length + 1];
+    private final int[] prefix;
 
     public NumArray(int[] nums) {
+        prefix = new int[nums.length + 1];
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
